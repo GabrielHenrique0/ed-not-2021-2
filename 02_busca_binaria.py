@@ -53,4 +53,3 @@ hora_ini = time()
 print(f"Posição de LUNISVALDO: {busca_binaria(nomes, 'LUNISVALDO')}")
 hora_fim = time()
 print(f"Tempo gasto procurando LUNISVALDO: {(hora_fim - hora_ini) * 1000}ms")
-
