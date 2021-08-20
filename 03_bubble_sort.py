@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # ALGORITMO DE ORDENAÇÃO BUBBLE SORT
 #
 # Percorre a lista a ser ordenada em sucessivas passadas,
@@ -10,19 +9,17 @@
 comps = 0       # Número de comparações
 passadas = 0    # Número de passadas
 trocas = 0      # Número de trocas
-=======
+
 #ALGORITMO DE ORDENAÇÃO BUBBLE SORT
 #
 # Percorre a lista a ser ordenada em sucessivas passadas,
 # trocando elementos adjacentes entre si quando o segundo for
 # até que, na última passada, nenhuma troca seja efetuada
->>>>>>> ca8fb4f83bd653cb84c3bdf258b499ced825da7c
 
 def bubble_sort(lista):
     """
         Função que implementa o algoritmo de ordenação Bubble Sort
     """
-<<<<<<< HEAD
 
     global comps, passadas, trocas
     comps = 0       # Número de comparações
@@ -41,7 +38,7 @@ def bubble_sort(lista):
             if lista[i + 1] < lista[i]:     # É necessário trocar
                 lista[i + 1], lista[i] = lista[i], lista[i + 1]  # Faz a troca
                 trocas += 1
-=======
+
     while True:     # Loop eterno
         trocou = False
         # Loop na lista até o PENÚLTIMO elemento len(lista) - 2
@@ -50,12 +47,10 @@ def bubble_sort(lista):
         for i in range(len(lista) - 2): # Inicia nova passada
             if lista[i + 1] < lista[i]:     # É necessário trocar
                 lista[i + 1], lista[i], lista[i + 1] # Faz a troca
->>>>>>> ca8fb4f83bd653cb84c3bdf258b499ced825da7c
                 trocou = True
 
         # Se houve troca, a lista está ordenada e podemos interromper
         # o loop while
-<<<<<<< HEAD
         if not trocou:  # trocou == False
             break   # Interrompe o while
 
@@ -87,7 +82,3 @@ fim = time()
 print(nomes_parcial)
 print(f"Tempo: {fim - ini}")
 print(f"Passadas: {passadas}, comparações: {comps}, trocas: {trocas}")
-=======
-        if not trocou: # trocou == false
-            break   # Interrompe o while
->>>>>>> ca8fb4f83bd653cb84c3bdf258b499ced825da7c
