@@ -60,8 +60,7 @@ hora_ini = time()
 print(f"Posição de LUNISVALDO: {busca_binaria(nomes, 'LUNISVALDO')}, {comps} comparações")
 hora_fim = time()
 print(f"Tempo gasto procurando LUNISVALDO: {(hora_fim - hora_ini) * 1000}ms")
-<<<<<<< HEAD
-=======
+
 
 hora_ini = time()
 print(f"Posição de NOEMIA: {busca_binaria(nomes, 'NOEMIA')}, {comps} comparações")
@@ -80,4 +79,4 @@ print(f"Tempo gasto procurando AARAO: {(hora_fim - hora_ini) * 1000}ms")
 
 
 print(f"Nome exatamente no meio da lista: {nomes[len(nomes) // 2]}")
->>>>>>> ca8fb4f83bd653cb84c3bdf258b499ced825da7c
+
