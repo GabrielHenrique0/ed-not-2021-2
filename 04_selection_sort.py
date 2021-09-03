@@ -49,13 +49,13 @@ def selection_sort(lista):
 # pos_sel: 0 (onde está o 88)
 # pos_menor: 1 (onde está o 44)
 # j: 2 (onde está o 33)
-# nums = [88, 44, 33, 0, 99, 55, 77, 22, 11, 66]
+nums = [88, 44, 33, 0, 99, 55, 77, 22, 11, 66]
 
 # NÃO é o pior caso: lista em ordem inversa
 #nums = [99, 88, 77, 66, 55, 44, 33, 22, 11, 0]
 
 # Melhor caso: lista já ordenada
-nums = [0, 11, 22, 33, 44, 55, 66, 77, 88, 99]
+#nums = [0, 11, 22, 33, 44, 55, 66, 77, 88, 99]
 
 selection_sort(nums)
 print(nums)
