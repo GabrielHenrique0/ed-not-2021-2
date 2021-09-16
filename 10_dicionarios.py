@@ -43,8 +43,8 @@ forma5 = {
     "fruta": "abacate",
     "tipo": "T"
 }
-from math import pi
 
+from math import pi
 
 def calcular_area(forma):
     if forma["tipo"] == "R":    # Retângulo
