@@ -208,4 +208,3 @@ print(f"[retangulo1] base: {retangulo1.base()}") # vai executar o getter
 # print(f"[retangulo1] base: {retangulo1.__base}, altura: {retangulo1.__altura}, tipo: {retangulo1.tipo}")
 
 # print(f"[triangulo1] base: {triangulo1.base}, altura: {triangulo1.__altura}, tipo: {triangulo1.__tipo}")
->>>>>>> fdf1ed824359cecf1695565b57642d12d4cfcfda
