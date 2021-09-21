@@ -18,10 +18,10 @@ print(pilha)
 inverso = ""
 
 # Remoção de elementos em posições que não são o final
-del pilha[11]   # Remove a posição 11
-del pilha[21]   # Remove a posição 21
-del pilha[8]
-del pilha[25]
+# del pilha[11]   # Remove a posição 11
+# del pilha[21]   # Remove a posição 21
+# del pilha[8]
+# del pilha[25]
 
 # Retira cada letra da pilha, de trá para frente, e coloca no inverso
 while len(pilha) > 0:
@@ -31,7 +31,8 @@ print(inverso)
 
 # PILHA
 # A pilha é um tipo abstrato de dados (TAD) que permite a entrada e a saída
-# de dados apenas na sua extremidade final. Como consequência, ela segue a regra LIFO (last in, first out - último a entrar, primeiro a sair)
+# de dados apenas na sua extremidade final. Como consequência, ela segue a 
+# regra LIFO (last in, first out - último a entrar, primeiro a sair)
 # acesso  limitado aos seus elementos.
 
 # 2 + { 3 - [5 * (2 + 7)]}
