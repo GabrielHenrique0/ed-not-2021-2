@@ -13,6 +13,12 @@ pilha.push(27)
 pilha.push(33)
 
 print(pilha.to_str())
+
+# Retirar um elemento da pilha
+removido = pilha.pop()
+print(f"Removido: {removido}, pilha: {pilha.to_str()}")
+
+# Consultar o último elemento
 ultimo = pilha.peek()
 print(f"Último: {ultimo}, pilha: {pilha.to_str()}")
 
@@ -22,7 +28,7 @@ while not pilha.is_empty():
 
 print(pilha.to_str())
 
-# Retirar um elemento da pilha
+# Retirar um elemento da pilha (vazia)
 removido = pilha.pop()
 print(f"Removido: {removido}, pilha: {pilha.to_str()}")
 
