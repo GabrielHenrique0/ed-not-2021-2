@@ -1,4 +1,5 @@
 class Queue:
+    
     """
         ESTRUTURAS DE DADOS FILA
         - Fila é uma lista linear de acesso restrito, que permite apenas as operações
