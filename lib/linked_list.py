@@ -114,6 +114,65 @@ class LinkedList:
         return -1   # Não encontrou
 
     """
+        Método para remover um elemento da lista
+    """
+    def remove(self, pos):
+
+        # 1º caso: lista vazia ou posição fora dos limites
+        # (menor que 0 ou maior que count - 1)
+        if self.__count == 0 or pos < 0 or pos > self.__count -1:
+            return None
+
+        # 2º caso: remoção do início da lista
+        if pos == 0:
+            removed = self.__head       # Nodo removido
+            self.__head = self.__head.next # Passa a a pontar para o nodo seguinte
+
+        # 3º caso: remoções intermediárias ou finais
+        else:
+            # Percorre a lista até encontrar o item anterior
+            # à posição de remoção (before)
+            before = self.__head
+            for i in range(1, pos): before = before.next
+
+            # O removido será o sucessor do before
+            removed = before.next
+
+            # Nododd da posição seguinte à de remoção (next)
+            after = removed.next
+
+            # O nodo anterior (before) passa a apontar para o
+            # nodo seguinte (after)
+            before.next = after
+
+            # Atualizando o __tail no caso da remoção do último nodo
+            if removed == self.__tail:
+                self.__tail = before
+                print(f"Valor do __tail: {self.__tail.data}")
+
+        self.__count -= 1
+        # Retorna o valor armazenado no nodo removido
+        return removed.data
+
+    """
+        Método para remover o primeiro item da lista
+    """
+    def removeHead(self):
+        return self.remove(0)
+
+    """
+        Método para remover o último nodo da lista
+    """
+    def removeTail(self):
+        return self.remove(self.__count - 1)
+
+    """
+        Método que retorna a quantidade de itens da lista
+    """
+    def count(self):
+        return self.__count
+
+    """
         Método que exibe a lista como uma string (para fins de depuração)
     """
     def to_str(self):
@@ -154,3 +213,31 @@ print(f"Info do nodo da posição 13: {lista.peek(13)}")
 print(f"Posição de tomate: {lista.index('tomate')}")
 print(f"Posição de café: {lista.index('café')}")
 print(f"Posição de cebola: {lista.index('cebola')}")
+
+print('----------------------------------')
+
+print(lista.to_str())
+
+# Remoção do início da lista
+removido = lista.remove(0)
+
+print(f"Valor removido: {removido}")
+print(lista.to_str())
+
+# Remoção na posição 5
+removido = lista.remove(5)
+
+print(f"Valor removido da posição 5: {removido}")
+print(lista.to_str())
+
+# Remoção do último nodo
+removido = lista.remove(lista.count() - 1)
+
+print(f"Valor removido do último nodo: {removido}")
+print(lista.to_str())
+
+# Remoção do último nodo (usando removeTail())
+removido = lista.removeTail()
+
+print(f"Valor removido do último nodo: {removido}")
+print(lista.to_str())
