@@ -82,7 +82,7 @@ class DoublyLinkedList:
         node2 = self.__tail
 
         # Contador que vai até a metade da lista
-        for pos range(0, meio + 1):
+        for pos in range(0, meio + 1):
             if(node1.data == val): return pos # retorna a posição encontrada
             if(node2.data == val): return self.__count - 1 - pos # retorna posição retroativa
             node1 = node1.next  # node1 anda para frente
