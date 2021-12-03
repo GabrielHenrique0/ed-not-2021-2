@@ -24,10 +24,10 @@ class Stack:
 
     """
         Método para retirada
-        O nome do método de retirada em pilhas também é padronizado:
+        O nome do método de retirada em pilhas também é padronizado: pop()
     """
-
     def pop(self):
+        if self.is_empty(): return None
         return self.__data.pop()
 
     """
@@ -46,7 +46,7 @@ class Stack:
         return len(self.__data) == 0
 
     """
-        Método que exibe a pilha como uma string(para fins de depuração)
+        Método que exibe a pilha como uma string (para fins de depuração)
     """
     def to_str(self):
         string = ""
@@ -55,4 +55,5 @@ class Stack:
             string += str(el)
         return "[ " + string + " ]"
 
-#############################################################
+#########################################################################
+
